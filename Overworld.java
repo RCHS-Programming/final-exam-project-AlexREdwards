@@ -17,11 +17,11 @@ public class Overworld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 500, 1); 
-        addObject(new Gold(),Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
-        addObject(new Gold(),Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
-        addObject(new Gold(),Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
-        addObject(new Gold(),Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
-        addObject(new Gold(),Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
+        addObject(new Gold(), 545, 248);
+        addObject(new Gold(), 332, 208);
+        addObject(new Gold(), 92, 301);
+        addObject(new Gold(), 178, 449);
+        addObject(new Gold(), 438, 417);
         addObject(new Player(), 60, 100);
         addObject(new Monster1(),100, 200);
         addObject(new Monster1(), 300, 400);

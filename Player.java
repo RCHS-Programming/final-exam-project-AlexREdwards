@@ -17,6 +17,7 @@ public class Player extends Actor
         PlayerMovement();
         detectMonster1Collision();
         detectMonster2Collision();
+        goldGet();
     }    
     
     public void PlayerMovement()
@@ -52,6 +53,14 @@ public class Player extends Actor
         {
             setLocation(60, 100);
             Greenfoot.playSound("hurt.wav");
+        }
+    }
+    public void goldGet()
+    {
+        if( isTouching (Gold.class))
+        {
+            removeTouching (Gold.class);
+            Greenfoot.playSound("yipee.wav");
         }
     }
 }
