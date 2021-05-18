@@ -17,10 +17,11 @@ public class Monster2 extends Actor
         move();
         randomTurn();
         turnAtEdge();
+        LookForPlayer();
     }    
     public void move()
     {
-        move(3);
+        move(2);
     }
     public void randomTurn()
     {
@@ -34,6 +35,15 @@ public class Monster2 extends Actor
         if ( isAtEdge() ) 
        {
            turn(17);
+       }
+    }
+     public void LookForPlayer()
+    {
+        if ( isTouching (Player.class) )        
+       {
+           removeTouching (Player.class);  
+           Greenfoot.playSound ("game-over.wav");
+           Greenfoot.stop();
        }
     }
 }

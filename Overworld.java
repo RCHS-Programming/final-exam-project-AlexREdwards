@@ -23,10 +23,8 @@ public class Overworld extends World
         addObject(new Gold(), 178, 449);
         addObject(new Gold(), 438, 417);
         addObject(new Player(), 60, 100);
-        addObject(new Monster1(),100, 200);
         addObject(new Monster1(), 300, 400);
         addObject(new Monster1(), 400, 300);
-        addObject(new Monster2(), 200, 200);
         addObject(new Monster2(), 400, 100);
         addObject(new Monster2(), 300, 500);
         addObject(new Tree(), 350, 400);

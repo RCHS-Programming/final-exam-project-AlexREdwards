@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
+    private int goldObtain;
+    public Player()
+    {
+        goldObtain = 0;
+    }
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -61,6 +66,12 @@ public class Player extends Actor
         {
             removeTouching (Gold.class);
             Greenfoot.playSound("yipee.wav");
+            goldObtain = goldObtain + 1;
+            if(goldObtain==5)
+            {
+                Greenfoot.playSound("yipee.wav");
+                Greenfoot.stop();
+            }
         }
     }
 }
